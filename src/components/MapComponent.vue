@@ -1,5 +1,6 @@
 <template>
   <div id="map">
+    <div class="info-bar title">2018년 12월 31일 까지 유효</div>
     <gmap-map
       :center="center"
       :zoom="18"
@@ -79,5 +80,11 @@
 <style scoped>
   #map {
     height: 100%;
+  }
+  .info-bar {
+    position: absolute;
+    z-index: 9999;
+    top:0;
+    left:100px;
   }
 </style>
